@@ -15,7 +15,7 @@ Please read app/README to get more information about React app.
 Run the unbox command
 
 ```bash
-truffle unbox rsk-react-express-box
+truffle unbox rsksmart/rsk-react-express-box
 ```
 
 For simplicity, there is hook that is going to setup the environment and install all it's dependencies.
