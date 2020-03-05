@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import './app.css';
-import ReactImage from './react.png';
 
 export default class App extends Component {
-  state = { username: null };
+  state = { storageValue: null };
 
   componentDidMount() {
-    fetch('/api/getUsername')
+            
+    fetch('/api/getValueStore')
       .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
+      .then(simpleStorageContract => this.setState({ storageValue: simpleStorageContract.value}));  
   }
 
-  render() {
-    const { username } = this.state;
+  render() {        
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
+      <div className="App">
+        <p>Your Truffle Box is installed and ready.</p>
+        <h2>Smart Contract Example</h2>      
+        <p>
+          If your contracts compiled and migrated successfully, below will show
+          a stored value of 0 (by default).
+        </p>
+        <div>        
+          <div>The stored value is: {this.state.storageValue}</div>        
+        </div>
+      </div>                
     );
   }
 }
