@@ -12,6 +12,6 @@
     "Build for production": "cd app && yarn build"
   },
   "hooks": {
-    "post-unpack": "cd app/ && npm install -g yarn && yarn"
+    "post-unpack": "npm i && cd app && npm i"
   }
 }
