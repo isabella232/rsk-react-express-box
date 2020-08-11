@@ -1,9 +1,18 @@
 {
     "name": "rsk-react-express-box",
-    "version": "1.0.0",
-    "dependencies": {
-        "@truffle/hdwallet-provider": "1.0.28"
+    "version": "1.0.1",
+    "description": "Truffle box to develop using Truffle and React Express on RSK blockchain",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rsksmart/rsk-react-express-box.git"
     },
-    "devDependencies": {},
-    "license": "MTI"
+    "keywords": [
+        "rsk",
+        "truffle"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@truffle/hdwallet-provider": "1.0.34"
+    },
+    "devDependencies": {}
 }
