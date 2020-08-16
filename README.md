@@ -120,7 +120,7 @@ And the `migrate output` should be similar to:
 
 6. Running contract tests.
 
-Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
+This Truffle box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
 
 Run this command in the development console:
 
@@ -308,4 +308,4 @@ Check out the [RSK developers portal](https://developers.rsk.co/).
 
 - **Do you have questions?**
 
-Ask in [RSK chat](https://gitter.im/rsksmart/getting-started).
+Ask in the [RSK chat](https://gitter.im/rsksmart/getting-started).
