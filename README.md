@@ -98,7 +98,7 @@ This smart contract has:
 * A function `get()` to return the number stored at variable `storedData`
 * A function `set()` to change the number stored at variable `storedData`
 
-5. Compile and migrate the smart contract. Note inside the development console we don't preface commands with `truffle`.
+5. Compile and migrate the smart contract. Note, inside the development console we don't preface commands with `truffle`.
 
 > To make sure you're in the development console, the command prompt must be `truffle(develop)>`
 
@@ -148,9 +148,9 @@ Our box is a client-server:
 - Server uses Express JS to interact with the smart contract.
 - Client uses React app.
 
-7. Running in developer mode
+7. Running in development mode
 
-In another terminal (i.e. not in the truffle develop prompt), go to the `app` directory and run the app in developer mode.
+In another terminal (i.e. not in the truffle develop prompt), go to the `app` directory and run the app in development mode.
 
 > Do not close the other terminal, which is running the Truffle development console, because it is our Blockchain simulator.
 > 
@@ -161,7 +161,7 @@ cd app
 npm run dev
 ```
 
-This command executes server and client applications and you can access in your browser:
+This command executes server and client applications and you can access it in your browser:
 
 - Server: [http://localhost:8080/](http://localhost:8080/)
 - Client: [http://localhost:3000/](http://localhost:3000/)
@@ -172,7 +172,7 @@ This command executes server and client applications and you can access in your 
 
 8. Running the production server
 
-You can chhose to run only the production server. In another terminal (i.e. not in the truffle develop prompt), go to the `app` directory and run the app in production mode.
+You can choose to run only the production server. In another terminal (i.e. not in the truffle develop prompt), go to the `app` directory and run the app in production mode.
 
 ```shell
 cd app
@@ -234,7 +234,7 @@ or .minimum-gas-price-mainnet.json, respectively.
 
 In the `truffle-config.js`, we are reading the parameter `minimumGasPrice` in each json file.
 
-For more information about the **Gas** and **minimumGasPrice** please go to [gas page](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
+For more information about the **Gas** and **minimumGasPrice** please go to the [gas page](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
 
 ### Connect to RSK
 
@@ -261,7 +261,7 @@ truffle console --network testnet
 truffle console --network mainnet
 ```
 
-3. Migrate the smart contracts. We will do it running the below commands directly in the terminal, without using the truffle console now to show to you this alternative.
+3. Migrate the smart contracts. We will do it running the below commands directly in the terminal, without using the truffle console, this is to show you an alternative.
 
 ```shell
 truffle migrate
@@ -270,7 +270,7 @@ truffle migrate
 
 The express server uses the [web3.js](https://web3js.readthedocs.io/) library to interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
-Choose which network you would like to connect the server to RSK Network 
+Choose which RSK network you would like to connect the server to 
 and update line 11 of the file `app/src/server/index.js`
 
 **Testnet**
