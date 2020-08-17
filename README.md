@@ -5,8 +5,8 @@ It includes network configurations for Mainnet, Testnet and the SimpleStorage co
 
 ## Requirements
 
-1. [NPM (Node Package Manager)](https://nodejs.org/en/)
-Node.js and NPM are needed, though both are usually installed at once.
+1. [NPM (Node Package Manager)](https://nodejs.org/en/) and 
+Node.js are needed, though both are usually installed at once.
 
 Go to [Node.js](https://nodejs.org/en/) if you need to install it.
 
@@ -145,8 +145,8 @@ truffle test
 ## The application
 
 Our box is a client-server: 
-- Server uses Express JS to interact with the smart contract.
-- Client uses React app.
+- Server uses `express JS` to interact with the smart contract.
+- Client uses `react` app.
 
 7. Running in development mode
 
@@ -199,6 +199,13 @@ Take a look in the `app/dist` folder:
 
 ## Using RSK networks
 
+This Truffle box is already configured to connect to both RSK networks: testnet and mainnet. We need only to update few items:
+
+- Setup an account & get R-BTC
+- RSK network gas price
+- Your wallet mnemonic
+- Choose the network in the app
+
 ### Setup an account & get R-BTC
 
 - Get an address, learning how works the [account based RSK addresses](https://developers.rsk.co/rsk/architecture/account-based/ "Account based RSK addresses - RSK Developers Portal").
@@ -207,7 +214,7 @@ Take a look in the `app/dist` folder:
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To update the **minimumGasPrice** in our project run this query using cURL:
@@ -266,7 +273,7 @@ truffle console --network mainnet
 ```shell
 truffle migrate
 ```
-4. Update Express JS component. 
+4. Update express JS component. 
 
 The express server uses the [web3.js](https://web3js.readthedocs.io/) library to interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
