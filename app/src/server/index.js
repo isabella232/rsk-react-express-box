@@ -4,7 +4,7 @@ const Web3 = require('web3');
 const SimpleStorageContract = require('../contracts/SimpleStorage.json');
 
 const app = express();
-// To connect to RSK network uncomment the following line.
+// To connect to RSK network update line 11 for one of the following providers:
 // const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");
 // const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
 
@@ -26,4 +26,4 @@ app.get('/api/getValueStore', async(req, res) => {
 
 });
 
-app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));
+app.listen(process.env.PORT || 8080, () => console.log(`Go to your browser at http://127.0.0.1:${process.env.PORT || 8080}!`));
